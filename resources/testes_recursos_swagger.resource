@@ -80,12 +80,12 @@ Passo 7 – clicar em novo cadastro
 
 Passo 8 – cadastrar nome completo
     Wait Until Element Is Visible    locator=${NomecompletoInput}
-    Input Text                       locator=${NomecompletoInput}    text=Quality Nara Hunters 
+    Input Text                       locator=${NomecompletoInput}    text=${NOME} 
     Sleep    2s
 
 Passo 9 – cadastrar email    
     Wait Until Element Is Visible    locator=${novoemailInput}
-    Input Text                       locator=${novoemailInput}    text=tqnaraqh@qacoders.com.br
+    Input Text                       locator=${novoemailInput}    text=${EMAIL}
     Sleep    2s
 
 Passo 10 – cadastrar perfil de acesso
@@ -114,3 +114,11 @@ Passo 14 – clicar no botão salvar
     Wait Until Element Is Visible      locator=${buttonsalvarnovo}
     Click Element                      locator=${buttonsalvarnovo}
     Sleep    5s
+
+
+Gerar massa de dados nome
+    ${palavra_randomica}    Generate Random String    length=9    chars=[LETTERS]
+    ${palavra_randomica}    Convert To Lower Case    ${palavra_randomica}
+    ${palavra_randomica}    Convert To Lower Case    ${palavra_randomica}@narateste.com
+    Set Test Variable    ${NOME}
+    Set Test Variable    ${EMAIL}
