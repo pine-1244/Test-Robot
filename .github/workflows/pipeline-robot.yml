@@ -31,7 +31,7 @@ jobs:
       - name: rodando os testes
         # run: echo Executando os testes de API do Robot
         run: |
-          robot --name "API and Web Tests" --outputdir results/ tests/
+          robot --name "Web Tests" --outputdir results/ tests/
  
       - name: Salvando os resultados dos testes
         # run: echo Salvando o Report dos Testes
