@@ -1,0 +1,54 @@
+name: Teste Front com Robot
+ 
+on: push
+ 
+jobs:
+   test:
+    runs-on: windows-latest
+ 
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: https://github.com/naracyntia/TestFrontAPIQH/report.html
+ 
+    steps:
+      - name: clone do projeto
+        uses: actions/checkout@v4
+ 
+      - name: configuração do python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+ 
+      - name: Instalação de dependência
+        # run: echo Instalação das depedências do Projeto
+        run: |
+          pip install robotframework-seleniumlibrary
+ 
+      - name: rodando os testes
+        # run: echo Executando os testes de API do Robot
+        run: |
+          robot --name "API and Web Tests" --outputdir results/ tests/
+ 
+      - name: Salvando os resultados dos testes
+        # run: echo Salvando o Report dos Testes
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: resultado-testes
+          path: results/
+ 
+      - name: configurar site
+        uses: actions/configure-pages@v2
+ 
+      - name: Carregamento arquivo de testes
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: results/
+ 
+      - name: Deploy dos testes
+        id: deployment
+        uses: actions/deploy-pages@v1
