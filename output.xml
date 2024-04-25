@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-24T20:37:04.303707" rpa="false" schemaversion="5">
-<suite id="s1" name="Post Usuario Testes Swagger" source="g:\Meu Drive\Academy_2024\RobortFramework\APIQualitysHunters\TestFrontAPIQH\tests\post_usuario_testes_swagger.robot">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-25T19:30:37.437153" rpa="false" schemaversion="5">
+<suite id="s1" name="Post Diretoria Testes Swagger" source="g:\Meu Drive\Academy_2024\RobortFramework\APIQualitysHunters\TestFrontAPIQH\tests\post_diretoria_testes_swagger.robot">
 <test id="s1-t1" name="Cenário de teste: Cadastro de usuário administrador" line="8">
-<kw name="Abrir navegador" owner="testes_recursos_swagger" type="SETUP">
+<kw name="Abrir navegador" owner="testes_diretoria_recursos_swagger" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-24T20:37:05.156944" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<msg time="2024-04-24T20:37:06.021390" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.78 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-25T19:30:38.307849" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-04-25T19:30:41.889229" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.62); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-24T20:37:05.156944" elapsed="2.509027"/>
+<status status="PASS" start="2024-04-25T19:30:38.306849" elapsed="6.654887"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-04-24T20:37:07.666970" elapsed="0.143913"/>
+<status status="PASS" start="2024-04-25T19:30:44.962742" elapsed="0.144906"/>
 </kw>
-<status status="PASS" start="2024-04-24T20:37:05.154944" elapsed="2.656941"/>
+<status status="PASS" start="2024-04-25T19:30:38.304852" elapsed="6.803794"/>
 </kw>
-<kw name="Passo 1 – acessar a página de login Qa.Coders Academy" owner="testes_recursos_swagger">
+<kw name="Passo 1 – acessar a página de login Qa.Coders Academy" owner="testes_diretoria_recursos_swagger">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-04-24T20:37:07.817878" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br'</msg>
+<msg time="2024-04-25T19:30:45.113641" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-04-24T20:37:07.816885" elapsed="26.595635"/>
+<status status="PASS" start="2024-04-25T19:30:45.113641" elapsed="25.605332"/>
 </kw>
-<status status="PASS" start="2024-04-24T20:37:07.814885" elapsed="26.598635"/>
+<status status="PASS" start="2024-04-25T19:30:45.110646" elapsed="25.609326"/>
 </kw>
-<kw name="Passo 2 – digitar e-mail" owner="testes_recursos_swagger">
+<kw name="Passo 2 – digitar e-mail" owner="testes_diretoria_recursos_swagger">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-04-24T20:37:34.529449" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+<msg time="2024-04-25T19:31:10.821910" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.61)
+  (Session info: chrome=124.0.6367.62)
 Stacktrace:
-	GetHandleVerifier [0x00007FF7D17370C2+63090]
-	(No symbol) [0x00007FF7D16A2D12]
-	(No symbol) [0x00007FF7D153EC65]
-	(No symbol) [0x00007FF7D151CA7C]
-	(No symbol) [0x00007FF7D15AD687]
-	(No symbol) [0x00007FF7D15C2AC1]
-	(No symbol) [0x00007FF7D15A6D83]
-	(No symbol) [0x00007FF7D15783A8]
-	(No symbol) [0x00007FF7D1579441]
-	GetHandleVerifier [0x00007FF7D1B3262D+4238301]
-	GetHandleVerifier [0x00007FF7D1B6F78D+4488509]
-	GetHandleVerifier [0x00007FF7D1B67A6F+4456479]
-	GetHandleVerifier [0x00007FF7D1810606+953270]
-	(No symbol) [0x00007FF7D16AE5DF]
-	(No symbol) [0x00007FF7D16A92B4]
-	(No symbol) [0x00007FF7D16A93EB]
-	(No symbol) [0x00007FF7D1699C24]
+	GetHandleVerifier [0x00007FF601CF70C2+63090]
+	(No symbol) [0x00007FF601C62D12]
+	(No symbol) [0x00007FF601AFEC65]
+	(No symbol) [0x00007FF601ADCA7C]
+	(No symbol) [0x00007FF601B6D687]
+	(No symbol) [0x00007FF601B82AC1]
+	(No symbol) [0x00007FF601B66D83]
+	(No symbol) [0x00007FF601B383A8]
+	(No symbol) [0x00007FF601B39441]
+	GetHandleVerifier [0x00007FF6020F262D+4238301]
+	GetHandleVerifier [0x00007FF60212F78D+4488509]
+	GetHandleVerifier [0x00007FF602127A6F+4456479]
+	GetHandleVerifier [0x00007FF601DD0606+953270]
+	(No symbol) [0x00007FF601C6E5DF]
+	(No symbol) [0x00007FF601C692B4]
+	(No symbol) [0x00007FF601C693EB]
+	(No symbol) [0x00007FF601C59C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </msg>
-<msg time="2024-04-24T20:37:34.537444" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg time="2024-04-25T19:31:10.841898" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.61)
+  (Session info: chrome=124.0.6367.62)
 Stacktrace:
-	GetHandleVerifier [0x00007FF7D17370C2+63090]
-	(No symbol) [0x00007FF7D16A2D12]
-	(No symbol) [0x00007FF7D153EC65]
-	(No symbol) [0x00007FF7D151CA7C]
-	(No symbol) [0x00007FF7D15AD687]
-	(No symbol) [0x00007FF7D15C2AC1]
-	(No symbol) [0x00007FF7D15A6D83]
-	(No symbol) [0x00007FF7D15783A8]
-	(No symbol) [0x00007FF7D1579441]
-	GetHandleVerifier [0x00007FF7D1B3262D+4238301]
-	GetHandleVerifier [0x00007FF7D1B6F78D+4488509]
-	GetHandleVerifier [0x00007FF7D1B67A6F+4456479]
-	GetHandleVerifier [0x00007FF7D1810606+953270]
-	(No symbol) [0x00007FF7D16AE5DF]
-	(No symbol) [0x00007FF7D16A92B4]
-	(No symbol) [0x00007FF7D16A93EB]
-	(No symbol) [0x00007FF7D1699C24]
+	GetHandleVerifier [0x00007FF601CF70C2+63090]
+	(No symbol) [0x00007FF601C62D12]
+	(No symbol) [0x00007FF601AFEC65]
+	(No symbol) [0x00007FF601ADCA7C]
+	(No symbol) [0x00007FF601B6D687]
+	(No symbol) [0x00007FF601B82AC1]
+	(No symbol) [0x00007FF601B66D83]
+	(No symbol) [0x00007FF601B383A8]
+	(No symbol) [0x00007FF601B39441]
+	GetHandleVerifier [0x00007FF6020F262D+4238301]
+	GetHandleVerifier [0x00007FF60212F78D+4488509]
+	GetHandleVerifier [0x00007FF602127A6F+4456479]
+	GetHandleVerifier [0x00007FF601DD0606+953270]
+	(No symbol) [0x00007FF601C6E5DF]
+	(No symbol) [0x00007FF601C692B4]
+	(No symbol) [0x00007FF601C693EB]
+	(No symbol) [0x00007FF601C59C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </msg>
 <arg>locator=${emailInput}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-04-24T20:37:34.416517" elapsed="0.273832">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" start="2024-04-25T19:31:10.764943" elapsed="0.472734">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.61)
+  (Session info: chrome=124.0.6367.62)
 Stacktrace:
-	GetHandleVerifier [0x00007FF7D17370C2+63090]
-	(No symbol) [0x00007FF7D16A2D12]
-	(No symbol) [0x00007FF7D153EC65]
-	(No symbol) [0x00007FF7D151CA7C]
-	(No symbol) [0x00007FF7D15AD687]
-	(No symbol) [0x00007FF7D15C2AC1]
-	(No symbol) [0x00007FF7D15A6D83]
-	(No symbol) [0x00007FF7D15783A8]
-	(No symbol) [0x00007FF7D1579441]
-	GetHandleVerifier [0x00007FF7D1B3262D+4238301]
-	GetHandleVerifier [0x00007FF7D1B6F78D+4488509]
-	GetHandleVerifier [0x00007FF7D1B67A6F+4456479]
-	GetHandleVerifier [0x00007FF7D1810606+953270]
-	(No symbol) [0x00007FF7D16AE5DF]
-	(No symbol) [0x00007FF7D16A92B4]
-	(No symbol) [0x00007FF7D16A93EB]
-	(No symbol) [0x00007FF7D1699C24]
+	GetHandleVerifier [0x00007FF601CF70C2+63090]
+	(No symbol) [0x00007FF601C62D12]
+	(No symbol) [0x00007FF601AFEC65]
+	(No symbol) [0x00007FF601ADCA7C]
+	(No symbol) [0x00007FF601B6D687]
+	(No symbol) [0x00007FF601B82AC1]
+	(No symbol) [0x00007FF601B66D83]
+	(No symbol) [0x00007FF601B383A8]
+	(No symbol) [0x00007FF601B39441]
+	GetHandleVerifier [0x00007FF6020F262D+4238301]
+	GetHandleVerifier [0x00007FF60212F78D+4488509]
+	GetHandleVerifier [0x00007FF602127A6F+4456479]
+	GetHandleVerifier [0x00007FF601DD0606+953270]
+	(No symbol) [0x00007FF601C6E5DF]
+	(No symbol) [0x00007FF601C692B4]
+	(No symbol) [0x00007FF601C693EB]
+	(No symbol) [0x00007FF601C59C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </status>
@@ -106,100 +106,85 @@ Stacktrace:
 <arg>locator=${emailInput}</arg>
 <arg>text=sysadmin@qacoders.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-04-24T20:37:34.691347" elapsed="0.001001"/>
+<status status="NOT RUN" start="2024-04-25T19:31:11.238676" elapsed="0.001000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-04-24T20:37:34.692348" elapsed="0.000999"/>
+<status status="NOT RUN" start="2024-04-25T19:31:11.240675" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-04-24T20:37:34.415519" elapsed="0.277828">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" start="2024-04-25T19:31:10.762944" elapsed="0.478730">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.61)
+  (Session info: chrome=124.0.6367.62)
 Stacktrace:
-	GetHandleVerifier [0x00007FF7D17370C2+63090]
-	(No symbol) [0x00007FF7D16A2D12]
-	(No symbol) [0x00007FF7D153EC65]
-	(No symbol) [0x00007FF7D151CA7C]
-	(No symbol) [0x00007FF7D15AD687]
-	(No symbol) [0x00007FF7D15C2AC1]
-	(No symbol) [0x00007FF7D15A6D83]
-	(No symbol) [0x00007FF7D15783A8]
-	(No symbol) [0x00007FF7D1579441]
-	GetHandleVerifier [0x00007FF7D1B3262D+4238301]
-	GetHandleVerifier [0x00007FF7D1B6F78D+4488509]
-	GetHandleVerifier [0x00007FF7D1B67A6F+4456479]
-	GetHandleVerifier [0x00007FF7D1810606+953270]
-	(No symbol) [0x00007FF7D16AE5DF]
-	(No symbol) [0x00007FF7D16A92B4]
-	(No symbol) [0x00007FF7D16A93EB]
-	(No symbol) [0x00007FF7D1699C24]
+	GetHandleVerifier [0x00007FF601CF70C2+63090]
+	(No symbol) [0x00007FF601C62D12]
+	(No symbol) [0x00007FF601AFEC65]
+	(No symbol) [0x00007FF601ADCA7C]
+	(No symbol) [0x00007FF601B6D687]
+	(No symbol) [0x00007FF601B82AC1]
+	(No symbol) [0x00007FF601B66D83]
+	(No symbol) [0x00007FF601B383A8]
+	(No symbol) [0x00007FF601B39441]
+	GetHandleVerifier [0x00007FF6020F262D+4238301]
+	GetHandleVerifier [0x00007FF60212F78D+4488509]
+	GetHandleVerifier [0x00007FF602127A6F+4456479]
+	GetHandleVerifier [0x00007FF601DD0606+953270]
+	(No symbol) [0x00007FF601C6E5DF]
+	(No symbol) [0x00007FF601C692B4]
+	(No symbol) [0x00007FF601C693EB]
+	(No symbol) [0x00007FF601C59C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </status>
 </kw>
-<kw name="Passo 3 – digitar senha" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.696343" elapsed="0.001002"/>
+<kw name="Passo 3 – digitar senha" owner="testes_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T19:31:11.244672" elapsed="0.001000"/>
 </kw>
-<kw name="Passo 4 – clicar no botão entrar" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.705338" elapsed="0.001000"/>
+<kw name="Passo 4 – clicar no botão entrar" owner="testes_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T19:31:11.248669" elapsed="0.001000"/>
 </kw>
-<kw name="Passo 5 – clicar em cadastro" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.708336" elapsed="0.000000"/>
+<kw name="Passo 5 – clicar em cadastro" owner="testes_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T19:31:11.255666" elapsed="0.000998"/>
 </kw>
-<kw name="Passo 6 – clicar em usuários" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.709335" elapsed="0.000000"/>
+<kw name="Passo 6 – clicar em Diretorias" owner="testes_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T19:31:11.258664" elapsed="0.000000"/>
 </kw>
-<kw name="Passo 7 – clicar em novo cadastro" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.710335" elapsed="0.001000"/>
+<kw name="Passo 7 – clicar em novo cadastro" owner="testes_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T19:31:11.263660" elapsed="0.000000"/>
 </kw>
-<kw name="Passo 8 – cadastrar nome completo" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.712335" elapsed="0.000000"/>
+<kw name="Passo 8 – cadastrar Diretoria" owner="testes_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T19:31:11.268658" elapsed="0.000000"/>
 </kw>
-<kw name="Passo 9 – cadastrar email" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.717331" elapsed="0.000000"/>
+<kw name="Passo 9 – clicar no botão salvar" owner="testes_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T19:31:11.270657" elapsed="0.000000"/>
 </kw>
-<kw name="Passo 10 – cadastrar perfil de acesso" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.726331" elapsed="0.001998"/>
-</kw>
-<kw name="Passo 11- cadastrar cpf" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.731322" elapsed="0.000000"/>
-</kw>
-<kw name="Passo 12 – cadastrar senha" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.732322" elapsed="0.001000"/>
-</kw>
-<kw name="Passo 13 – confirmar senha" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.734320" elapsed="0.000000"/>
-</kw>
-<kw name="Passo 14 – clicar no botão salvar" owner="testes_recursos_swagger">
-<status status="NOT RUN" start="2024-04-24T20:37:34.739321" elapsed="0.000997"/>
-</kw>
-<status status="FAIL" start="2024-04-24T20:37:05.153946" elapsed="29.587371">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" start="2024-04-25T19:30:38.303847" elapsed="32.969808">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.61)
+  (Session info: chrome=124.0.6367.62)
 Stacktrace:
-	GetHandleVerifier [0x00007FF7D17370C2+63090]
-	(No symbol) [0x00007FF7D16A2D12]
-	(No symbol) [0x00007FF7D153EC65]
-	(No symbol) [0x00007FF7D151CA7C]
-	(No symbol) [0x00007FF7D15AD687]
-	(No symbol) [0x00007FF7D15C2AC1]
-	(No symbol) [0x00007FF7D15A6D83]
-	(No symbol) [0x00007FF7D15783A8]
-	(No symbol) [0x00007FF7D1579441]
-	GetHandleVerifier [0x00007FF7D1B3262D+4238301]
-	GetHandleVerifier [0x00007FF7D1B6F78D+4488509]
-	GetHandleVerifier [0x00007FF7D1B67A6F+4456479]
-	GetHandleVerifier [0x00007FF7D1810606+953270]
-	(No symbol) [0x00007FF7D16AE5DF]
-	(No symbol) [0x00007FF7D16A92B4]
-	(No symbol) [0x00007FF7D16A93EB]
-	(No symbol) [0x00007FF7D1699C24]
+	GetHandleVerifier [0x00007FF601CF70C2+63090]
+	(No symbol) [0x00007FF601C62D12]
+	(No symbol) [0x00007FF601AFEC65]
+	(No symbol) [0x00007FF601ADCA7C]
+	(No symbol) [0x00007FF601B6D687]
+	(No symbol) [0x00007FF601B82AC1]
+	(No symbol) [0x00007FF601B66D83]
+	(No symbol) [0x00007FF601B383A8]
+	(No symbol) [0x00007FF601B39441]
+	GetHandleVerifier [0x00007FF6020F262D+4238301]
+	GetHandleVerifier [0x00007FF60212F78D+4488509]
+	GetHandleVerifier [0x00007FF602127A6F+4456479]
+	GetHandleVerifier [0x00007FF601DD0606+953270]
+	(No symbol) [0x00007FF601C6E5DF]
+	(No symbol) [0x00007FF601C692B4]
+	(No symbol) [0x00007FF601C693EB]
+	(No symbol) [0x00007FF601C59C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </status>
 </test>
-<status status="FAIL" start="2024-04-24T20:37:04.324696" elapsed="30.449607"/>
+<status status="FAIL" start="2024-04-25T19:30:37.450147" elapsed="33.846494"/>
 </suite>
 <statistics>
 <total>
@@ -208,32 +193,32 @@ Stacktrace:
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Post Usuario Testes Swagger">Post Usuario Testes Swagger</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Post Diretoria Testes Swagger">Post Diretoria Testes Swagger</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-04-24T20:37:06.021390" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.78 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg time="2024-04-24T20:37:34.529449" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+<msg time="2024-04-25T19:30:41.889229" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.62); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-25T19:31:10.821910" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.61)
+  (Session info: chrome=124.0.6367.62)
 Stacktrace:
-	GetHandleVerifier [0x00007FF7D17370C2+63090]
-	(No symbol) [0x00007FF7D16A2D12]
-	(No symbol) [0x00007FF7D153EC65]
-	(No symbol) [0x00007FF7D151CA7C]
-	(No symbol) [0x00007FF7D15AD687]
-	(No symbol) [0x00007FF7D15C2AC1]
-	(No symbol) [0x00007FF7D15A6D83]
-	(No symbol) [0x00007FF7D15783A8]
-	(No symbol) [0x00007FF7D1579441]
-	GetHandleVerifier [0x00007FF7D1B3262D+4238301]
-	GetHandleVerifier [0x00007FF7D1B6F78D+4488509]
-	GetHandleVerifier [0x00007FF7D1B67A6F+4456479]
-	GetHandleVerifier [0x00007FF7D1810606+953270]
-	(No symbol) [0x00007FF7D16AE5DF]
-	(No symbol) [0x00007FF7D16A92B4]
-	(No symbol) [0x00007FF7D16A93EB]
-	(No symbol) [0x00007FF7D1699C24]
+	GetHandleVerifier [0x00007FF601CF70C2+63090]
+	(No symbol) [0x00007FF601C62D12]
+	(No symbol) [0x00007FF601AFEC65]
+	(No symbol) [0x00007FF601ADCA7C]
+	(No symbol) [0x00007FF601B6D687]
+	(No symbol) [0x00007FF601B82AC1]
+	(No symbol) [0x00007FF601B66D83]
+	(No symbol) [0x00007FF601B383A8]
+	(No symbol) [0x00007FF601B39441]
+	GetHandleVerifier [0x00007FF6020F262D+4238301]
+	GetHandleVerifier [0x00007FF60212F78D+4488509]
+	GetHandleVerifier [0x00007FF602127A6F+4456479]
+	GetHandleVerifier [0x00007FF601DD0606+953270]
+	(No symbol) [0x00007FF601C6E5DF]
+	(No symbol) [0x00007FF601C692B4]
+	(No symbol) [0x00007FF601C693EB]
+	(No symbol) [0x00007FF601C59C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </msg>

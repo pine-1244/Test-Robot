@@ -62,10 +62,17 @@ Passo 7 – clicar em novo cadastro
 
 Passo 8 – cadastrar Diretoria
     Wait Until Element Is Visible    locator=${NomediretoriaInput}
-    Input Text                       locator=${NomediretoriaInput}    text=Nara Sem Mensagem  
+    Input Text                       locator=${NomediretoriaInput}    text=${PALAVRA_RANDOMICA}  
     Sleep    2s
 
 Passo 9 – clicar no botão salvar
     Wait Until Element Is Visible      locator=${buttonsalvarnovo}
     Click Element                      locator=${buttonsalvarnovo}
     Sleep    5s
+
+
+
+Gerar massa de dados nome
+    ${palavra_randomica}    Generate Random String    length=9    chars=[LETTERS]
+    ${palavra_randomica}    Convert To Lower Case    ${palavra_randomica}
+    Set Test Variable    ${PALAVRA_RANDOMICA}

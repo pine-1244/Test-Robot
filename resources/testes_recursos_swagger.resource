@@ -95,7 +95,7 @@ Passo 10 – cadastrar perfil de acesso
 
 Passo 11- cadastrar cpf
     Wait Until Element Is Visible    locator=${cpfInput}
-    Input Text                       locator=${cpfInput}    text=12345798756
+    Input Text                       locator=${cpfInput}    text=${CPF}
     Sleep    2s
 
 Passo 12 – cadastrar senha
@@ -122,3 +122,5 @@ Gerar massa de dados nome
     ${palavra_randomica}    Convert To Lower Case    ${palavra_randomica}@narateste.com
     Set Test Variable    ${NOME}
     Set Test Variable    ${EMAIL}
+    ${numero_randomico}    Generate Random String    length=11    chars=[NUMBERS]
+    Set Test Variable    ${CPF}

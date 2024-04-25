@@ -1,7 +1,7 @@
 *** Settings ***
 Resource          ../resources/testes_diretoria_recursos_swagger.resource
 Test Setup        Abrir navegador
-Test Teardown     Fechar navegador
+#Test Teardown     Fechar navegador
 
 
 *** Test Cases ***
