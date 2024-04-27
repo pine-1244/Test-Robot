@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-25T19:30:37.437153" rpa="false" schemaversion="5">
-<suite id="s1" name="Post Diretoria Testes Swagger" source="g:\Meu Drive\Academy_2024\RobortFramework\APIQualitysHunters\TestFrontAPIQH\tests\post_diretoria_testes_swagger.robot">
-<test id="s1-t1" name="Cenário de teste: Cadastro de usuário administrador" line="8">
-<kw name="Abrir navegador" owner="testes_diretoria_recursos_swagger" type="SETUP">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-25T20:36:22.554466" rpa="false" schemaversion="5">
+<suite id="s1" name="Get Diretoria Testes Swagger" source="g:\Meu Drive\Academy_2024\RobortFramework\APIQualitysHunters\TestFrontAPIQH\tests\get_diretoria_testes_swagger.robot">
+<test id="s1-t1" name="Cenário de teste: Editar dados de usuário administrador" line="9">
+<kw name="Abrir navegador" owner="testes_get_diretoria_recursos_swagger" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-25T19:30:38.307849" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<msg time="2024-04-25T19:30:41.889229" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.62); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-25T20:36:23.602507" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-04-25T20:36:25.560975" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.62); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-25T19:30:38.306849" elapsed="6.654887"/>
+<status status="PASS" start="2024-04-25T20:36:23.600505" elapsed="5.733413"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-04-25T19:30:44.962742" elapsed="0.144906"/>
+<status status="PASS" start="2024-04-25T20:36:29.334918" elapsed="0.511731"/>
 </kw>
-<status status="PASS" start="2024-04-25T19:30:38.304852" elapsed="6.803794"/>
+<status status="PASS" start="2024-04-25T20:36:23.595508" elapsed="6.252141"/>
 </kw>
-<kw name="Passo 1 – acessar a página de login Qa.Coders Academy" owner="testes_diretoria_recursos_swagger">
+<kw name="Passo 1 – acessar a página de login Qa.Coders Academy" owner="testes_get_diretoria_recursos_swagger">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-04-25T19:30:45.113641" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br'</msg>
+<msg time="2024-04-25T20:36:29.860641" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-04-25T19:30:45.113641" elapsed="25.605332"/>
+<status status="PASS" start="2024-04-25T20:36:29.859643" elapsed="8.819072"/>
 </kw>
-<status status="PASS" start="2024-04-25T19:30:45.110646" elapsed="25.609326"/>
+<status status="PASS" start="2024-04-25T20:36:29.856644" elapsed="8.823070"/>
 </kw>
-<kw name="Passo 2 – digitar e-mail" owner="testes_diretoria_recursos_swagger">
+<kw name="Passo 2 – digitar e-mail" owner="testes_get_diretoria_recursos_swagger">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-04-25T19:31:10.821910" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+<msg time="2024-04-25T20:36:39.058992" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=124.0.6367.62)
 Stacktrace:
@@ -51,7 +51,7 @@ Stacktrace:
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </msg>
-<msg time="2024-04-25T19:31:10.841898" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg time="2024-04-25T20:36:39.082978" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=124.0.6367.62)
 Stacktrace:
@@ -77,7 +77,7 @@ Stacktrace:
 </msg>
 <arg>locator=${emailInput}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-04-25T19:31:10.764943" elapsed="0.472734">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" start="2024-04-25T20:36:38.767660" elapsed="0.756044">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=124.0.6367.62)
 Stacktrace:
@@ -106,14 +106,14 @@ Stacktrace:
 <arg>locator=${emailInput}</arg>
 <arg>text=sysadmin@qacoders.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-04-25T19:31:11.238676" elapsed="0.001000"/>
+<status status="NOT RUN" start="2024-04-25T20:36:39.523704" elapsed="0.001000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-04-25T19:31:11.240675" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-25T20:36:39.524704" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-04-25T19:31:10.762944" elapsed="0.478730">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" start="2024-04-25T20:36:38.766662" elapsed="0.759041">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=124.0.6367.62)
 Stacktrace:
@@ -138,28 +138,22 @@ Stacktrace:
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </status>
 </kw>
-<kw name="Passo 3 – digitar senha" owner="testes_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T19:31:11.244672" elapsed="0.001000"/>
+<kw name="Passo 3 – digitar senha" owner="testes_get_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T20:36:39.529701" elapsed="0.000000"/>
 </kw>
-<kw name="Passo 4 – clicar no botão entrar" owner="testes_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T19:31:11.248669" elapsed="0.001000"/>
+<kw name="Passo 4 – clicar no botão entrar" owner="testes_get_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T20:36:39.533699" elapsed="0.000999"/>
 </kw>
-<kw name="Passo 5 – clicar em cadastro" owner="testes_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T19:31:11.255666" elapsed="0.000998"/>
+<kw name="Passo 5 – clicar em cadastro" owner="testes_get_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T20:36:39.536697" elapsed="0.000999"/>
 </kw>
-<kw name="Passo 6 – clicar em Diretorias" owner="testes_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T19:31:11.258664" elapsed="0.000000"/>
+<kw name="Passo 6 – clicar em Diretorias" owner="testes_get_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T20:36:39.539694" elapsed="0.000000"/>
 </kw>
-<kw name="Passo 7 – clicar em novo cadastro" owner="testes_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T19:31:11.263660" elapsed="0.000000"/>
+<kw name="Passo 7 – selecionar campo pesquisar" owner="testes_get_diretoria_recursos_swagger">
+<status status="NOT RUN" start="2024-04-25T20:36:39.541695" elapsed="0.000997"/>
 </kw>
-<kw name="Passo 8 – cadastrar Diretoria" owner="testes_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T19:31:11.268658" elapsed="0.000000"/>
-</kw>
-<kw name="Passo 9 – clicar no botão salvar" owner="testes_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T19:31:11.270657" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-04-25T19:30:38.303847" elapsed="32.969808">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" start="2024-04-25T20:36:23.591511" elapsed="15.953181">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=124.0.6367.62)
 Stacktrace:
@@ -184,7 +178,7 @@ Stacktrace:
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </status>
 </test>
-<status status="FAIL" start="2024-04-25T19:30:37.450147" elapsed="33.846494"/>
+<status status="FAIL" start="2024-04-25T20:36:22.577452" elapsed="17.021207"/>
 </suite>
 <statistics>
 <total>
@@ -193,12 +187,25 @@ Stacktrace:
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Post Diretoria Testes Swagger">Post Diretoria Testes Swagger</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Get Diretoria Testes Swagger">Get Diretoria Testes Swagger</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-04-25T19:30:41.889229" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.62); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg time="2024-04-25T19:31:10.821910" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+<msg time="2024-04-25T20:36:23.577519" level="ERROR">Error in file 'g:\Meu Drive\Academy_2024\RobortFramework\APIQualitysHunters\TestFrontAPIQH\resources\testes_get_diretoria_recursos_swagger.resource' on line 6: Importing library 'Faker' failed: ModuleNotFoundError: No module named 'Faker'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\Cyntia\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_debug_adapter
+  G:\Meu Drive\Academy_2024\RobortFramework\APIQualitysHunters\TestFrontAPIQH
+  c:\Users\Cyntia\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src
+  c:\Users\Cyntia\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored
+  C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\Cyntia\AppData\Local\Programs\Python\Python312
+  C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+<msg time="2024-04-25T20:36:25.560975" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.62); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-25T20:36:39.058992" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=124.0.6367.62)
 Stacktrace:
