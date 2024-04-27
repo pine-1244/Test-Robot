@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-25T20:36:22.554466" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-26T20:24:43.873880" rpa="false" schemaversion="5">
 <suite id="s1" name="Get Diretoria Testes Swagger" source="g:\Meu Drive\Academy_2024\RobortFramework\APIQualitysHunters\TestFrontAPIQH\tests\get_diretoria_testes_swagger.robot">
 <test id="s1-t1" name="Cenário de teste: Editar dados de usuário administrador" line="9">
 <kw name="Abrir navegador" owner="testes_get_diretoria_recursos_swagger" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-25T20:36:23.602507" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<msg time="2024-04-25T20:36:25.560975" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.62); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-26T20:24:45.166162" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-04-26T20:24:48.780148" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-25T20:36:23.600505" elapsed="5.733413"/>
+<status status="PASS" start="2024-04-26T20:24:45.164162" elapsed="8.560774"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-04-25T20:36:29.334918" elapsed="0.511731"/>
+<status status="PASS" start="2024-04-26T20:24:53.725936" elapsed="0.235346"/>
 </kw>
-<status status="PASS" start="2024-04-25T20:36:23.595508" elapsed="6.252141"/>
+<status status="PASS" start="2024-04-26T20:24:45.160165" elapsed="8.802114"/>
 </kw>
 <kw name="Passo 1 – acessar a página de login Qa.Coders Academy" owner="testes_get_diretoria_recursos_swagger">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-04-25T20:36:29.860641" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br'</msg>
+<msg time="2024-04-26T20:24:53.974273" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-04-25T20:36:29.859643" elapsed="8.819072"/>
+<status status="PASS" start="2024-04-26T20:24:53.973274" elapsed="13.668822"/>
 </kw>
-<status status="PASS" start="2024-04-25T20:36:29.856644" elapsed="8.823070"/>
+<status status="PASS" start="2024-04-26T20:24:53.970276" elapsed="13.672817"/>
 </kw>
 <kw name="Passo 2 – digitar e-mail" owner="testes_get_diretoria_recursos_swagger">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-04-25T20:36:39.058992" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+<msg time="2024-04-26T20:25:07.789005" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.62)
+  (Session info: chrome=124.0.6367.63)
 Stacktrace:
-	GetHandleVerifier [0x00007FF601CF70C2+63090]
-	(No symbol) [0x00007FF601C62D12]
-	(No symbol) [0x00007FF601AFEC65]
-	(No symbol) [0x00007FF601ADCA7C]
-	(No symbol) [0x00007FF601B6D687]
-	(No symbol) [0x00007FF601B82AC1]
-	(No symbol) [0x00007FF601B66D83]
-	(No symbol) [0x00007FF601B383A8]
-	(No symbol) [0x00007FF601B39441]
-	GetHandleVerifier [0x00007FF6020F262D+4238301]
-	GetHandleVerifier [0x00007FF60212F78D+4488509]
-	GetHandleVerifier [0x00007FF602127A6F+4456479]
-	GetHandleVerifier [0x00007FF601DD0606+953270]
-	(No symbol) [0x00007FF601C6E5DF]
-	(No symbol) [0x00007FF601C692B4]
-	(No symbol) [0x00007FF601C693EB]
-	(No symbol) [0x00007FF601C59C24]
+	GetHandleVerifier [0x00007FF6A3BE70C2+63090]
+	(No symbol) [0x00007FF6A3B52D12]
+	(No symbol) [0x00007FF6A39EEC65]
+	(No symbol) [0x00007FF6A39CCA7C]
+	(No symbol) [0x00007FF6A3A5D687]
+	(No symbol) [0x00007FF6A3A72AC1]
+	(No symbol) [0x00007FF6A3A56D83]
+	(No symbol) [0x00007FF6A3A283A8]
+	(No symbol) [0x00007FF6A3A29441]
+	GetHandleVerifier [0x00007FF6A3FE262D+4238301]
+	GetHandleVerifier [0x00007FF6A401F78D+4488509]
+	GetHandleVerifier [0x00007FF6A4017A6F+4456479]
+	GetHandleVerifier [0x00007FF6A3CC0606+953270]
+	(No symbol) [0x00007FF6A3B5E5DF]
+	(No symbol) [0x00007FF6A3B592B4]
+	(No symbol) [0x00007FF6A3B593EB]
+	(No symbol) [0x00007FF6A3B49C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </msg>
-<msg time="2024-04-25T20:36:39.082978" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg time="2024-04-26T20:25:07.827979" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.62)
+  (Session info: chrome=124.0.6367.63)
 Stacktrace:
-	GetHandleVerifier [0x00007FF601CF70C2+63090]
-	(No symbol) [0x00007FF601C62D12]
-	(No symbol) [0x00007FF601AFEC65]
-	(No symbol) [0x00007FF601ADCA7C]
-	(No symbol) [0x00007FF601B6D687]
-	(No symbol) [0x00007FF601B82AC1]
-	(No symbol) [0x00007FF601B66D83]
-	(No symbol) [0x00007FF601B383A8]
-	(No symbol) [0x00007FF601B39441]
-	GetHandleVerifier [0x00007FF6020F262D+4238301]
-	GetHandleVerifier [0x00007FF60212F78D+4488509]
-	GetHandleVerifier [0x00007FF602127A6F+4456479]
-	GetHandleVerifier [0x00007FF601DD0606+953270]
-	(No symbol) [0x00007FF601C6E5DF]
-	(No symbol) [0x00007FF601C692B4]
-	(No symbol) [0x00007FF601C693EB]
-	(No symbol) [0x00007FF601C59C24]
+	GetHandleVerifier [0x00007FF6A3BE70C2+63090]
+	(No symbol) [0x00007FF6A3B52D12]
+	(No symbol) [0x00007FF6A39EEC65]
+	(No symbol) [0x00007FF6A39CCA7C]
+	(No symbol) [0x00007FF6A3A5D687]
+	(No symbol) [0x00007FF6A3A72AC1]
+	(No symbol) [0x00007FF6A3A56D83]
+	(No symbol) [0x00007FF6A3A283A8]
+	(No symbol) [0x00007FF6A3A29441]
+	GetHandleVerifier [0x00007FF6A3FE262D+4238301]
+	GetHandleVerifier [0x00007FF6A401F78D+4488509]
+	GetHandleVerifier [0x00007FF6A4017A6F+4456479]
+	GetHandleVerifier [0x00007FF6A3CC0606+953270]
+	(No symbol) [0x00007FF6A3B5E5DF]
+	(No symbol) [0x00007FF6A3B592B4]
+	(No symbol) [0x00007FF6A3B593EB]
+	(No symbol) [0x00007FF6A3B49C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </msg>
 <arg>locator=${emailInput}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-04-25T20:36:38.767660" elapsed="0.756044">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" start="2024-04-26T20:25:07.676075" elapsed="1.170095">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.62)
+  (Session info: chrome=124.0.6367.63)
 Stacktrace:
-	GetHandleVerifier [0x00007FF601CF70C2+63090]
-	(No symbol) [0x00007FF601C62D12]
-	(No symbol) [0x00007FF601AFEC65]
-	(No symbol) [0x00007FF601ADCA7C]
-	(No symbol) [0x00007FF601B6D687]
-	(No symbol) [0x00007FF601B82AC1]
-	(No symbol) [0x00007FF601B66D83]
-	(No symbol) [0x00007FF601B383A8]
-	(No symbol) [0x00007FF601B39441]
-	GetHandleVerifier [0x00007FF6020F262D+4238301]
-	GetHandleVerifier [0x00007FF60212F78D+4488509]
-	GetHandleVerifier [0x00007FF602127A6F+4456479]
-	GetHandleVerifier [0x00007FF601DD0606+953270]
-	(No symbol) [0x00007FF601C6E5DF]
-	(No symbol) [0x00007FF601C692B4]
-	(No symbol) [0x00007FF601C693EB]
-	(No symbol) [0x00007FF601C59C24]
+	GetHandleVerifier [0x00007FF6A3BE70C2+63090]
+	(No symbol) [0x00007FF6A3B52D12]
+	(No symbol) [0x00007FF6A39EEC65]
+	(No symbol) [0x00007FF6A39CCA7C]
+	(No symbol) [0x00007FF6A3A5D687]
+	(No symbol) [0x00007FF6A3A72AC1]
+	(No symbol) [0x00007FF6A3A56D83]
+	(No symbol) [0x00007FF6A3A283A8]
+	(No symbol) [0x00007FF6A3A29441]
+	GetHandleVerifier [0x00007FF6A3FE262D+4238301]
+	GetHandleVerifier [0x00007FF6A401F78D+4488509]
+	GetHandleVerifier [0x00007FF6A4017A6F+4456479]
+	GetHandleVerifier [0x00007FF6A3CC0606+953270]
+	(No symbol) [0x00007FF6A3B5E5DF]
+	(No symbol) [0x00007FF6A3B592B4]
+	(No symbol) [0x00007FF6A3B593EB]
+	(No symbol) [0x00007FF6A3B49C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </status>
@@ -106,79 +106,79 @@ Stacktrace:
 <arg>locator=${emailInput}</arg>
 <arg>text=sysadmin@qacoders.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-04-25T20:36:39.523704" elapsed="0.001000"/>
+<status status="NOT RUN" start="2024-04-26T20:25:08.847168" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-04-25T20:36:39.524704" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-26T20:25:08.852165" elapsed="0.001000"/>
 </kw>
-<status status="FAIL" start="2024-04-25T20:36:38.766662" elapsed="0.759041">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" start="2024-04-26T20:25:07.673077" elapsed="1.183092">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.62)
+  (Session info: chrome=124.0.6367.63)
 Stacktrace:
-	GetHandleVerifier [0x00007FF601CF70C2+63090]
-	(No symbol) [0x00007FF601C62D12]
-	(No symbol) [0x00007FF601AFEC65]
-	(No symbol) [0x00007FF601ADCA7C]
-	(No symbol) [0x00007FF601B6D687]
-	(No symbol) [0x00007FF601B82AC1]
-	(No symbol) [0x00007FF601B66D83]
-	(No symbol) [0x00007FF601B383A8]
-	(No symbol) [0x00007FF601B39441]
-	GetHandleVerifier [0x00007FF6020F262D+4238301]
-	GetHandleVerifier [0x00007FF60212F78D+4488509]
-	GetHandleVerifier [0x00007FF602127A6F+4456479]
-	GetHandleVerifier [0x00007FF601DD0606+953270]
-	(No symbol) [0x00007FF601C6E5DF]
-	(No symbol) [0x00007FF601C692B4]
-	(No symbol) [0x00007FF601C693EB]
-	(No symbol) [0x00007FF601C59C24]
+	GetHandleVerifier [0x00007FF6A3BE70C2+63090]
+	(No symbol) [0x00007FF6A3B52D12]
+	(No symbol) [0x00007FF6A39EEC65]
+	(No symbol) [0x00007FF6A39CCA7C]
+	(No symbol) [0x00007FF6A3A5D687]
+	(No symbol) [0x00007FF6A3A72AC1]
+	(No symbol) [0x00007FF6A3A56D83]
+	(No symbol) [0x00007FF6A3A283A8]
+	(No symbol) [0x00007FF6A3A29441]
+	GetHandleVerifier [0x00007FF6A3FE262D+4238301]
+	GetHandleVerifier [0x00007FF6A401F78D+4488509]
+	GetHandleVerifier [0x00007FF6A4017A6F+4456479]
+	GetHandleVerifier [0x00007FF6A3CC0606+953270]
+	(No symbol) [0x00007FF6A3B5E5DF]
+	(No symbol) [0x00007FF6A3B592B4]
+	(No symbol) [0x00007FF6A3B593EB]
+	(No symbol) [0x00007FF6A3B49C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </status>
 </kw>
 <kw name="Passo 3 – digitar senha" owner="testes_get_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T20:36:39.529701" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-26T20:25:08.877664" elapsed="0.001005"/>
 </kw>
 <kw name="Passo 4 – clicar no botão entrar" owner="testes_get_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T20:36:39.533699" elapsed="0.000999"/>
+<status status="NOT RUN" start="2024-04-26T20:25:08.887658" elapsed="0.000996"/>
 </kw>
 <kw name="Passo 5 – clicar em cadastro" owner="testes_get_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T20:36:39.536697" elapsed="0.000999"/>
+<status status="NOT RUN" start="2024-04-26T20:25:08.891652" elapsed="0.000000"/>
 </kw>
 <kw name="Passo 6 – clicar em Diretorias" owner="testes_get_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T20:36:39.539694" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-26T20:25:08.892651" elapsed="0.000000"/>
 </kw>
 <kw name="Passo 7 – selecionar campo pesquisar" owner="testes_get_diretoria_recursos_swagger">
-<status status="NOT RUN" start="2024-04-25T20:36:39.541695" elapsed="0.000997"/>
+<status status="NOT RUN" start="2024-04-26T20:25:08.894650" elapsed="0.001008"/>
 </kw>
-<status status="FAIL" start="2024-04-25T20:36:23.591511" elapsed="15.953181">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" start="2024-04-26T20:24:45.156168" elapsed="23.741480">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.62)
+  (Session info: chrome=124.0.6367.63)
 Stacktrace:
-	GetHandleVerifier [0x00007FF601CF70C2+63090]
-	(No symbol) [0x00007FF601C62D12]
-	(No symbol) [0x00007FF601AFEC65]
-	(No symbol) [0x00007FF601ADCA7C]
-	(No symbol) [0x00007FF601B6D687]
-	(No symbol) [0x00007FF601B82AC1]
-	(No symbol) [0x00007FF601B66D83]
-	(No symbol) [0x00007FF601B383A8]
-	(No symbol) [0x00007FF601B39441]
-	GetHandleVerifier [0x00007FF6020F262D+4238301]
-	GetHandleVerifier [0x00007FF60212F78D+4488509]
-	GetHandleVerifier [0x00007FF602127A6F+4456479]
-	GetHandleVerifier [0x00007FF601DD0606+953270]
-	(No symbol) [0x00007FF601C6E5DF]
-	(No symbol) [0x00007FF601C692B4]
-	(No symbol) [0x00007FF601C693EB]
-	(No symbol) [0x00007FF601C59C24]
+	GetHandleVerifier [0x00007FF6A3BE70C2+63090]
+	(No symbol) [0x00007FF6A3B52D12]
+	(No symbol) [0x00007FF6A39EEC65]
+	(No symbol) [0x00007FF6A39CCA7C]
+	(No symbol) [0x00007FF6A3A5D687]
+	(No symbol) [0x00007FF6A3A72AC1]
+	(No symbol) [0x00007FF6A3A56D83]
+	(No symbol) [0x00007FF6A3A283A8]
+	(No symbol) [0x00007FF6A3A29441]
+	GetHandleVerifier [0x00007FF6A3FE262D+4238301]
+	GetHandleVerifier [0x00007FF6A401F78D+4488509]
+	GetHandleVerifier [0x00007FF6A4017A6F+4456479]
+	GetHandleVerifier [0x00007FF6A3CC0606+953270]
+	(No symbol) [0x00007FF6A3B5E5DF]
+	(No symbol) [0x00007FF6A3B592B4]
+	(No symbol) [0x00007FF6A3B593EB]
+	(No symbol) [0x00007FF6A3B49C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </status>
 </test>
-<status status="FAIL" start="2024-04-25T20:36:22.577452" elapsed="17.021207"/>
+<status status="FAIL" start="2024-04-26T20:24:43.890863" elapsed="25.034780"/>
 </suite>
 <statistics>
 <total>
@@ -191,7 +191,7 @@ Stacktrace:
 </suite>
 </statistics>
 <errors>
-<msg time="2024-04-25T20:36:23.577519" level="ERROR">Error in file 'g:\Meu Drive\Academy_2024\RobortFramework\APIQualitysHunters\TestFrontAPIQH\resources\testes_get_diretoria_recursos_swagger.resource' on line 6: Importing library 'Faker' failed: ModuleNotFoundError: No module named 'Faker'
+<msg time="2024-04-26T20:24:45.146175" level="ERROR">Error in file 'g:\Meu Drive\Academy_2024\RobortFramework\APIQualitysHunters\TestFrontAPIQH\resources\testes_get_diretoria_recursos_swagger.resource' on line 6: Importing library 'Faker' failed: ModuleNotFoundError: No module named 'Faker'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -204,28 +204,28 @@ PYTHONPATH:
   C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Lib
   C:\Users\Cyntia\AppData\Local\Programs\Python\Python312
   C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
-<msg time="2024-04-25T20:36:25.560975" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.62); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg time="2024-04-25T20:36:39.058992" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+<msg time="2024-04-26T20:24:48.780148" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Users\Cyntia\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-26T20:25:07.789005" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=124.0.6367.62)
+  (Session info: chrome=124.0.6367.63)
 Stacktrace:
-	GetHandleVerifier [0x00007FF601CF70C2+63090]
-	(No symbol) [0x00007FF601C62D12]
-	(No symbol) [0x00007FF601AFEC65]
-	(No symbol) [0x00007FF601ADCA7C]
-	(No symbol) [0x00007FF601B6D687]
-	(No symbol) [0x00007FF601B82AC1]
-	(No symbol) [0x00007FF601B66D83]
-	(No symbol) [0x00007FF601B383A8]
-	(No symbol) [0x00007FF601B39441]
-	GetHandleVerifier [0x00007FF6020F262D+4238301]
-	GetHandleVerifier [0x00007FF60212F78D+4488509]
-	GetHandleVerifier [0x00007FF602127A6F+4456479]
-	GetHandleVerifier [0x00007FF601DD0606+953270]
-	(No symbol) [0x00007FF601C6E5DF]
-	(No symbol) [0x00007FF601C692B4]
-	(No symbol) [0x00007FF601C693EB]
-	(No symbol) [0x00007FF601C59C24]
+	GetHandleVerifier [0x00007FF6A3BE70C2+63090]
+	(No symbol) [0x00007FF6A3B52D12]
+	(No symbol) [0x00007FF6A39EEC65]
+	(No symbol) [0x00007FF6A39CCA7C]
+	(No symbol) [0x00007FF6A3A5D687]
+	(No symbol) [0x00007FF6A3A72AC1]
+	(No symbol) [0x00007FF6A3A56D83]
+	(No symbol) [0x00007FF6A3A283A8]
+	(No symbol) [0x00007FF6A3A29441]
+	GetHandleVerifier [0x00007FF6A3FE262D+4238301]
+	GetHandleVerifier [0x00007FF6A401F78D+4488509]
+	GetHandleVerifier [0x00007FF6A4017A6F+4456479]
+	GetHandleVerifier [0x00007FF6A3CC0606+953270]
+	(No symbol) [0x00007FF6A3B5E5DF]
+	(No symbol) [0x00007FF6A3B592B4]
+	(No symbol) [0x00007FF6A3B593EB]
+	(No symbol) [0x00007FF6A3B49C24]
 	BaseThreadInitThunk [0x00007FFC236A7344+20]
 	RtlUserThreadStart [0x00007FFC23F026B1+33]
 </msg>
