@@ -21,7 +21,7 @@ ${buttonsalvarnovo}          //button[@type='submit'][contains(.,'SALVAR NOVO')]
 
 *** Keywords ***
 Abrir navegador
-    Open Browser                browser=chrome
+    Open Browser                browser=headlesschrome
     Maximize Browser Window
 
 #Fechar navegador

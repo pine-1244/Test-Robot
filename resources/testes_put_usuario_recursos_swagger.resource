@@ -37,7 +37,7 @@ Criar usuario em massa
     Log                    ${USUARIO}
 
 Abrir navegador
-    Open Browser                browser=chrome
+    Open Browser                browser=headlesschrome
     Maximize Browser Window
 
 #Fechar navegador
