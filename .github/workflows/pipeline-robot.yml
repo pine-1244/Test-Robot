@@ -39,7 +39,7 @@ jobs:
         if: always()
         with:
           name: resultado-testes
-          path: results/
+          path: /results
  
       - name: configurar site
         uses: actions/configure-pages@v2
@@ -47,7 +47,7 @@ jobs:
       - name: Carregamento arquivo de testes
         uses: actions/upload-pages-artifact@v1
         with:
-          path: results/
+          path: /results
  
       - name: Deploy dos testes
         id: deployment
