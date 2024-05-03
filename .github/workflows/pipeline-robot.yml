@@ -12,7 +12,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: https://github.com/naracyntia/TestFrontAPIQH/report.html
+      url: https://github.com/naracyntia/Testes-de-frontend-com-Robot-Qualitys-Hunters-academy-front-robot
  
     steps:
       - name: clone do projeto
